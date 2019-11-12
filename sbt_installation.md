@@ -46,7 +46,7 @@ tar -xvzf sbt-1.3.3.tgz
 ```
 - Setup environment
 ```
-echo "export PATH=$PATH:/opt/sbt-1.3.3.tgz/bin" >> ~/.bashrc
+echo "export PATH=$PATH:/opt/sbt-1.3.3/bin" >> ~/.bashrc
 source ~/.bashrc
 ```
 - Run sbt shell
