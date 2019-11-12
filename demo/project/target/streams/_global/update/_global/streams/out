@@ -1,0 +1,3 @@
+[debug] "not up to date. inChanged = true, force = false
+[debug] Updating ProjectRef(uri("file:/Users/skylab/spark-demo/demo/project/"), "demo-build")...
+[debug] Done updating ProjectRef(uri("file:/Users/skylab/spark-demo/demo/project/"), "demo-build")
