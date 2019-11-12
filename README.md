@@ -71,7 +71,7 @@ In order to execute the application, right-click on the script and choose run
 	```> ssh user@ip-server```
 - Check input data:
 ``` > hdfs dfs -ls /data/spark-demo/input ```
-- Submit job by command in server with [spark-submit](https://spark.apache.org/docs/latest/running-on-yarn.html) command
+- Submit job by command in server with **spark-submit** command
 - Example:
   
 ```
@@ -91,6 +91,8 @@ $SPARK_HOME/bin/spark-submit \
 **spark-demo_2.11-0.1.jar** : is excutation jar
 
 **/data/spark-demo/input/posts.csv** and **/data/spark-demo/output/df_result** : args of a spark application, here are input and output.
+
+- You can follow this link: [Run spark in yarn](https://spark.apache.org/docs/latest/running-on-yarn.html)
 
 ## Result
 - Check result : 
