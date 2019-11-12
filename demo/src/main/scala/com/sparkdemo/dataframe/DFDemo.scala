@@ -21,6 +21,7 @@ object DFDemo {
 
     spark.read
       .option("header", "true")
+      .option("delimiter", "\t")
       .csv(input)
       .withColumn("date", substring(col("created_at"), 0, 10))
       .groupBy(col("date"))

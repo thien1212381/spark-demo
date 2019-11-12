@@ -24,8 +24,9 @@ object DSDemo {
 
     val ds = spark.read
       .option("header", "true")
+      .option("delimiter", "\t")
       .csv(input)
-      .toDF("id", "userId", "content", "date")
+      .toDF("id", "userId", "title", "date")
       .as[Post]
 
     ds.groupByKey(post => post.date.substring(0, 10)).mapGroups {

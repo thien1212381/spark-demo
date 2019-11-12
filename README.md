@@ -10,7 +10,7 @@
 - Count number of posts each day
 - Input:
 
-| id |owner_id  |title|created_at
+| id |user_id  |title|created_at
 |--|--|--|--
 | 57743415 | 11435841 |How to play one mp4 video in MacOs|2019-09-01T05:23:51.327
 |57743416|4687359|Copy Bower components' css, js and scss into another directory with Gulp|2019-09-01T05:23:41.240
@@ -25,7 +25,8 @@
 
 ## Requirements
 - Install [Java 8 & IntelliJ](https://github.com/TranHuuBao/mapreduce-demo/blob/master/setup-env.md)
-- Install [Scala + Sbt](https://github.com/thien1212381/spark-demo/blob/master/scala_sbt_installation.md)
+- Install [Scala ](https://github.com/thien1212381/spark-demo/blob/master/scala_installation.md)
+- Install [Sbt](https://github.com/thien1212381/spark-demo/blob/master/sbt_installation.md)
 - Install [Spark](https://github.com/thien1212381/spark-demo/blob/master/spark_installation.md)
 - Install [Hadoop - Yarn](https://github.com/vinhdangphuc/hands-on/blob/master/hands-on/hadoop.md) (for yarn mode)
 

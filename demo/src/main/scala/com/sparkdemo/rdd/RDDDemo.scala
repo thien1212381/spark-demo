@@ -26,7 +26,7 @@ object RDDDemo {
     val results = data
       .filter(line => line != head)
       .map(line => {
-        val col = line.split(",")
+        val col = line.split("\t")
         val date = col(3).substring(0, 10)
         (date, 1)
       })
