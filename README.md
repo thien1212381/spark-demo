@@ -52,11 +52,11 @@ In order to execute the application, right-click on the script and choose run
 
 ### Run with spark submit
 #### Build excutable jar
-- Open terminal and run below command 
-```> cd $path-to-project/demo```
-```> sbt```
+- Open terminal and run below command
+- ```> cd $path-to-project/demo```
+- ```> sbt```
 *sbt*: will download dependencies was configured in build.sbt
-```> package```
+- ```> package```
 *package*:  build excutable jar
 
 #### Copy excutable jar file to server
