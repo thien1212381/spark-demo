@@ -7,22 +7,25 @@ object DFDemo {
   def main(args: Array[String]): Unit = {
     var input = "src/resources/posts.csv"
     var output = "src/resources/df_result.csv"
+    var master = "local[*]"
 
-    if (args.length == 3) {
-      input = args(1)
-      output = args(2)
+    if (args.length >= 2) {
+      master = "yarn"
+      input = args(0)
+      output = args(1)
     }
 
     val spark = SparkSession
       .builder()
       .appName("Spark Data Frame Demo")
-      .master("local[*]")
+      .master(master)
       .getOrCreate()
 
     spark.read
       .option("header", "true")
       .option("delimiter", "\t")
       .csv(input)
+      .toDF("id", "user_id", "title", "created_at")
       .withColumn("date", substring(col("created_at"), 0, 10))
       .groupBy(col("date"))
       .count()

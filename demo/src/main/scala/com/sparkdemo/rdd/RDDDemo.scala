@@ -6,14 +6,16 @@ object RDDDemo {
   def main(args: Array[String]): Unit = {
     var input = "src/resources/posts.csv"
     var output = "src/resources/rdd_result.csv"
+    var master = "local[*]"
 
-    if (args.length == 3) {
-      input = args(1)
-      output = args(2)
+    if (args.length >= 2) {
+      master = "yarn"
+      input = args(0)
+      output = args(1)
     }
 
     val conf = new SparkConf()
-      .setMaster("local")
+      .setMaster(master)
       .setAppName("Spark Demo")
       .set("spark.hadoop.validateOutputSpecs", "False")
 
